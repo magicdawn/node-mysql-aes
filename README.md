@@ -1,5 +1,5 @@
 # mysql-aes
-> A Node.js implementation of MySQL aes_encrypt and aes_decrypt
+> A Node.js implementation of MySQL `aes_encrypt` and `aes_decrypt`
 
 [![Build Status](https://img.shields.io/travis/magicdawn/node-mysql-aes.svg?style=flat-square)](https://travis-ci.org/magicdawn/node-mysql-aes)
 [![Coverage Status](https://img.shields.io/codecov/c/github/magicdawn/node-mysql-aes.svg?style=flat-square)](https://codecov.io/gh/magicdawn/node-mysql-aes)
