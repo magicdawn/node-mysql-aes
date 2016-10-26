@@ -22,8 +22,8 @@ const AES = require('mysql-aes')
 
 |return type|signature|equal in mysql|
 |---|---|---|
-| `String` | `AES.encrypt(str, key)` | `SELECT AES_ENCRYPT(str, key)` |
-| `String` | `AES.decrypt(encrypted, key)` | `SELECT CAST(AES_DECRYPT(UNHEX(encrypted), key) as CHAR)`
+| `String` | `AES.encrypt(str, key)`        | `SELECT HEX(AES_ENCRYPT(str, key))` |
+| `String` | `AES.decrypt(encrypted, key)`  | `SELECT CAST(AES_DECRYPT(UNHEX(encrypted), key) as CHAR)`
 
 ## Changelog
 [CHANGELOG.md](CHANGELOG.md)
