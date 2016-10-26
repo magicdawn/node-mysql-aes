@@ -1,0 +1,38 @@
+{
+  "name": "mysql-aes",
+  "version": "0.0.1",
+  "description": "A Node.js implementation of MySQL aes_encrypt and aes_decrypt",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-cover": "istanbul cover _mocha -- -u exports"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/magicdawn/node-mysql-aes.git"
+  },
+  "keywords": [
+    "mysql",
+    "crypto",
+    "aes",
+    "aes_encrypt",
+    "aes_decrypt"
+  ],
+  "author": "magicdawn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicdawn/node-mysql-aes/issues"
+  },
+  "homepage": "https://github.com/magicdawn/node-mysql-aes#readme",
+  "dependencies": {
+    "co": "^4.6.0"
+  },
+  "devDependencies": {
+    "co-mocha": "^1.1.3",
+    "codecov": "^1.0.1",
+    "eslint": "^3.4.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2",
+    "should": "^11.1.0"
+  }
+}
