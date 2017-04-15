@@ -1,4 +1,6 @@
 # mysql-aes
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/magicdawn/node-mysql-aes.svg)](https://greenkeeper.io/)
 > A Node.js implementation of MySQL `aes_encrypt` and `aes_decrypt`
 
 [![Build Status](https://img.shields.io/travis/magicdawn/node-mysql-aes.svg?style=flat-square)](https://travis-ci.org/magicdawn/node-mysql-aes)
