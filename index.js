@@ -14,7 +14,6 @@ exports.encrypt = (str, key) => {
   return ret.toUpperCase()
 }
 
-
 exports.decrypt = (str, key) => {
   const d = crypto.createDecipheriv('aes-128-ecb', convertCryptKey(key), '')
   let ret = ''
@@ -26,8 +25,8 @@ exports.decrypt = (str, key) => {
 exports.convertCryptKey = convertCryptKey
 
 function convertCryptKey(strKey) {
-  const newKey = new Buffer([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-  strKey = new Buffer(strKey)
+  const newKey = Buffer.from([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+  strKey = Buffer.from(strKey)
   for (let i = 0; i < strKey.length; i++) newKey[i % 16] ^= strKey[i]
   return newKey
 }
