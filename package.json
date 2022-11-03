@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "A Node.js implementation of MySQL aes_encrypt and aes_decrypt",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "mocha",
-    "test-cover": "istanbul cover _mocha -- -u exports"
+    "test-cover": "nyc --reporter=lcov --reporter=text mocha"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
   },
   "files": [
     "index.js",
+    "index.d.ts",
     "package.json",
     "LICENSE",
     "README.md"
