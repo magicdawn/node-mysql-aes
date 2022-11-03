@@ -1,6 +1,6 @@
 {
   "name": "mysql-aes",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Node.js implementation of MySQL aes_encrypt and aes_decrypt",
   "main": "index.js",
   "types": "index.d.ts",
